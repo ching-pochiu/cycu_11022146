@@ -1,0 +1,20 @@
+17 = n # 會產生 SyntaxError
+
+x = y = 1
+print(x, y) 
+
+n = 17;  # 有效，但不建議
+print(n);  # 有效，但不建議
+
+# 以下情況會產生 SyntaxError
+# if x > 5; :
+#     print("Error")
+
+# 會產生 SyntaxError
+# n = 17.
+# 會產生 ImportError
+# import maath
+
+
+
+

@@ -1,0 +1,51 @@
+import math
+
+# 半徑（公分）
+radius = 5  # cm
+
+# 計算體積（立方公分）
+volume = (4/3) * math.pi * (radius**3)  # cm^3
+
+# 顯示結果
+print(volume)
+
+import math
+
+# 設定 x 的值（角度，以弧度表示）
+x = 42 # degrees
+
+#將角度轉換為弧度
+x_radians = math.radians(x)
+
+# 計算 cosine 和 sine 的平方和
+result = (math.cos(x_radians)**2) + (math.sin(x_radians)**2)
+
+# 顯示結果
+print(result)
+
+import math
+
+# 方法 1：使用指數運算符 (**)
+result1 = math.e**2
+print(result1)
+
+# 方法 2：使用 math.pow()
+result2 = math.pow(math.e, 2)
+print(result2)
+
+# 方法 3：使用 math.exp()
+result3 = math.exp(2)
+print(result3)
+
+# 比較結果
+print(f"math.e**2: {result1}")
+print(f"math.pow(math.e, 2): {result2}")
+print(f"math.exp(2): {result3}")
+
+#判斷哪個最精確
+print(math.exp(2) - math.pow(math.e,2))
+print(math.exp(2) - math.e**2)
+
+
+
+
