@@ -1,0 +1,19 @@
+def gcd(a, b):
+  """
+  使用輾轉相除法遞迴計算兩個整數的最大公因數
+
+  Args:
+    a: 第一個整數
+    b: 第二個整數
+
+  Returns:
+    兩個整數的最大公因數
+  """
+  if b == 0:
+    return a
+  else:
+    return gcd(b, a % b)
+
+# 範例
+x,y =56,98
+print(f"GCD of {x} and {y} is {gcd(x,y)}")
